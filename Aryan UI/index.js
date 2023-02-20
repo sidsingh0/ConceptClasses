@@ -20,4 +20,4 @@ jQuery(document).ready(function($) {
         }, 1000);
     });
     }
-  }(jQuery));
+  (jQuery));
