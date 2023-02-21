@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
       event.preventDefault();
       var $section = $($(this).attr('href')); 
       $('html, body').animate({
-        scrollTop: $section.offset().top
+        scrollTop: $section.offset().top - $("#nav").height()
       }, 500);
     }
     $('[data-scroll]').on('click', scrollToSection);
@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
     $('a').click(function(e){
         e.preventDefault();
         $('body, html').animate({
-            scrollTop: $('.scroll-to-this').offset().top-100
+            scrollTop: $('.scroll-to-this').offset().top - $("#nav").height()
         }, 1000);
     });
     }

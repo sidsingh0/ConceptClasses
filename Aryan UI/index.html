@@ -37,7 +37,7 @@
                 <p>Learn from the best teachers available. With an experience of more than 26 years, results, speak for themselves.</p>
             </div>
         </div>
-    </div>
+        </div>
     </section>
 
 
@@ -149,49 +149,70 @@
     </section>
     <hr>
 
-    <section class="resultcontainer">
+    <section class="resultcontainer" id="3">
         <header class="head">
             <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
         </header>
         <div class="sub">
             <p style="text-align: center;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
+            <br>
         </div>
         <div class="cardview">
-            <div class="c-resultcontainer">
+            <div class="c-videocontainer">
                 <div class="videocard">
-                    <img src="public/img/Tarini.jpg" alt="Tarini">
-                    <div class="intro">
-                        <h1>Tarini Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%</h2>
-                        <h6>Tarini Chavan - IGCSE, March 19</h6>
+                    <video src="public/img/review1.mp4"></video>
+                    <div class="vcintro">
+                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
+                            <span>Play Video</span>
+                        </button>
                     </div>
                 </div>
                 <div class="videocard">
-                    <video src="public/img/review1.mp4" alt="Sanvi">
-                    <div class="intro">
-                        <h1>Sanvi Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                        <h6>Sanvi Chavan - IGCSE, March 19</h6>
+                    <video src="public/img/review1.mp4"></video>
+                    <div class="vcintro">
+                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
+                            <span>Play Video</span>
+                        </button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="public/img/student3.jpg" alt="Student3">
-                    <div class="intro">
-                        <h1>Sanvi Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                        <h6>Sanvi Chavan - IGCSE, March 19</h6>
+                <div class="videocard">
+                    <video src="public/img/review1.mp4"></video>
+                    <div class="vcintro">
+                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
+                            <span>Play Video</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="video-player" id="videoplayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="public/img/review1.mp4" type="video/mp4">
+            </video>
+            <img src="public/img/x-circle.svg" class="close-btn" onclick="stopVideo()">
+        </div> -->
     </section>
+
+    <script>
+        var videoplayer = document.getElementById("videoplayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoplayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoplayer.style.display = "block"
+        }
+    </script>
 
 
     <div class="contactcontainerwrapper">
-    <section class="contactcontainer">
+    <section class="contactcontainer" id="4">
         <div class="contacttext" style="display:flex;flex-direction: column; gap:2vh">
             <h1>Book your</h1>
             <h1 style="color: #00AFB9;">demo.</h1>
