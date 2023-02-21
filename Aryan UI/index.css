@@ -393,6 +393,19 @@ html{
     place-items: center;
 }
 
+.videocard{
+    height: 400px;
+    width: 350px;
+    margin: 40px;
+    object-fit: scale-down;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.videocard
+
 .card{
     height: 400px;
     width: 300px;
