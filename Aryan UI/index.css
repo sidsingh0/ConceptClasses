@@ -404,7 +404,9 @@ html{
     border-radius: 26px;
 }
 
-.videocard
+.videocard>video{
+    width: 350px;
+}
 
 .card{
     height: 400px;
