@@ -447,28 +447,44 @@ html{
     align-items: center;
     text-align: center;
     justify-content: center;
-    grid-gap:10px;
+    grid-gap:0.1vw;
 }
 .resultcardcontainer>div{
     min-height: 400px;
     overflow: hidden;
     height: 60vh;
-    margin:auto;
     border-radius: 25px;
 }
 
 .card{
     height: 400px;
-    width: 300px;
-    margin: 10px;
-    object-fit: scale-down;
+    width: auto;
+    margin: 30px;
     box-shadow: 5px 5px 20px black;
-    position: relative;
     overflow: hidden;
     border-radius: 26px;
-    
+    display: flex;
+    flex-direction: column-reverse;
 }
 
+.card>div>h2{
+    font-size: 2.5vh;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.card>div>p{
+    margin-bottom: 5px;
+    color: #CED4DA;
+}
+
+.card>div{
+    padding:10px;
+    background-color: #212529;
+}
+
+/* 
 .card>img{
     height: 400px;
     width: 300px;
@@ -511,7 +527,7 @@ html{
     margin: 10px;
     visibility: hidden;
     opacity: 0;
-}
+} */
 
 
 .reviewcardcontainer{
@@ -606,3 +622,53 @@ html{
 
 .bounce-in-right{-webkit-animation:bounce-in-right 1.5s ease-out both;animation:bounce-in-right 1.5s ease-out both}
 @-webkit-keyframes bounce-in-right{0%{-webkit-transform:translateX(600px);transform:translateX(600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(68px);transform:translateX(68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(32px);transform:translateX(32px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(8px);transform:translateX(8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-right{0%{-webkit-transform:translateX(600px);transform:translateX(600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(68px);transform:translateX(68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(32px);transform:translateX(32px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(8px);transform:translateX(8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+.footercontainer{
+    margin-top: -30px;
+    background-color: #18191B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: 80%;
+    padding:20px;
+    display: flex;
+    color: #CED4DA;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+@media(max-width:700px) {
+    .footerend{
+        display: none !important;
+    }
+}
+
+
+::-webkit-scrollbar{
+    height: 1px;
+    width: 4px;
+    background: gray;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
+}
