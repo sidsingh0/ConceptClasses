@@ -69,15 +69,15 @@
         </div>
     </section>
 
-    <section style="height:20vh;display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
-        <div style="width:80%;display: flex;justify-content: space-between;align-items: center;">
-            <div style="flex:1;display: flex; justify-content: center;border-right: 2px solid #ADB5BD;">
+    <section style="display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
+        <div style="width:80%;display: flex;justify-content: space-between;align-items: center;margin: 30px;"  class="countercontainer">
+            <div style="flex:1;display: flex; justify-content: center;">
                 <div style="text-align: center;">
                     <h1 id="count1" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;"></h1>
                     <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">students</p>
                 </div>
             </div>
-            <div style="flex:1;display: flex; justify-content: center;border-right: 2px solid #ADB5BD;">
+            <div style="flex:1;display: flex; justify-content: center;border-left: 2px solid #ADB5BD;border-right: 2px solid #ADB5BD;" class="countercontainerline">
                 <div style="text-align: center;">
                 <h1 id="count2" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">26+</h1>
                 <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">Years of experience</p>
@@ -107,7 +107,7 @@
                 }
             }, step);
             }
-            counter("count1", 0, 1000, 2500);
+            counter("count1", 0, 1000, 1500);
             counter("count2", 0, 26, 2500);
             counter("count3", 0, 12, 2500);
     </script>
@@ -130,7 +130,7 @@
         <div class="top-box top-box-a">
             <img src="public/img/Rectangle 24D2.png">
         </div>
-    </section><hr> <hr style="visibility: hidden; translate:-50px -50px"  id="3">
+    </section><hr> <div style="visibility: hidden; translate:-50px -50px"  id="3"></div>
 
     
     <section class="resultcontainer">
@@ -174,7 +174,7 @@
         </div>
         <div class="reviewcardcontainer">
             <div class="videocard">
-                <img src="public/img/review2.png">
+                 <div class="reviewimagecontainer"><img src="public/img/review2.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
                         <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')">
@@ -183,7 +183,7 @@
                     </div>
             </div>
             <div class="videocard">
-                <img src="public/img/review1.png">
+                <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
                         <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
@@ -192,7 +192,7 @@
                     </div>
             </div>
             <div class="videocard">
-                <img src="public/img/review1.png">
+                <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
                         <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
