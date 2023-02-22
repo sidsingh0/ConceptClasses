@@ -645,7 +645,15 @@ html{
         display: none !important;
     }
 }
-
+@media(max-width:650px) {
+   .countercontainer{
+       flex-direction: column;
+   } 
+   .countercontainerline{
+       border: 0px !important;
+       margin: 30px 0px 30px 0px;
+   }
+}
 
 ::-webkit-scrollbar{
     height: 1px;
