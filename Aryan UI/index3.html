@@ -14,6 +14,7 @@
     <title>Tuitions</title>
 </head>
 <body>
+    <script src="index.js" defer></script>
     <div class="wrapper">
     <nav id="navigation">
         <img src="logo.png" width="40px">
@@ -25,31 +26,50 @@
         </div>
     </nav>
 
-    <section id="1" style="height:100vh;position: relative;display: flex;justify-content: center;align-items: center;background-image:url('public/img/books.png');">
+    <section id="1" class="c-homecontainerwrapper" style="height:100vh;position: relative;display: flex;justify-content: center;align-items: center;background-image:url('public/img/books.png');">
         <div class="c-homecontainer">
-        <div class="c-hometitle">
+        <div class="c-hometitle text-focus-in">
             <button class="cssbuttons-io">
-                <span>Start studying today</span>
+                <a data-scroll class="hov-color-blue" href="#4">Start studying today</a>
               </button>  
             <h1>in Mumbai. </h1> <h1 style="color: #00AFB9;">IGCSE & IB</h1> <h1>Best classes for</h1>
         </div>
         <div class="c-homebody">
-            <div class="c-homebody-text">
+            <div class="c-homebody-text text-focus-in">
                 <p>Learn from the best teachers available. With an experience of more than 26 years, results, speak for themselves.</p>
             </div>
         </div>
     </div>
+    
     <div style="align-self:end;flex-grow:1;z-index: 10;display:flex;justify-content: space-evenly;height:70px;align-items: center;background: linear-gradient(0deg, rgba(0,0,0,1) 29%, rgba(0,212,255,0) 100%);flex-wrap: wrap;">
-        <div style="color:#CED4DA;"><h1 style=" font-weight: 300!important;flex:1">IITian Faculty</h1></div>
-        <div style="color:#CED4DA"><h1 style=" font-weight: 300!important;flex:1">PhD Faculty</h1></div>
-        <div style="color:#CED4DA"><h1 style=" font-weight: 300!important;flex:1">Achievement</h1></div>
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="book-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1; font-size: 1.5rem ;">IITian Faculty</p>
+        </div>
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="school-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 1.5rem ;">PhD Teachers</p>
+        </div>
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="earth-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 1.5rem ;">Achievement</p>
+        </div>
     </div>
     </section>
+    <div class="m-homecontainerfinalwrapper">
+    <section class="m-homecontainerfinal">
+        <h1>hello</h1>
+        <p>Learn from the best teachers available. With an experience of more than 26 years, results, speak for themselves.</p>
+        <button class="cssbuttons-io">
+            <a data-scroll class="hov-color-blue" href="#4">Start studying today</a>
+        </button>  
+    </section>
+</div>
 
     <div style="visibility: hidden; translate:-70px -70px"  id="2"></div>
 
 
-    <section class="c-aboutcontainersection" style="height:85vh;">
+    <!-- <section class="c-aboutcontainersection" style="height:85vh;">
         <div class="c-aboutcontainer" style="max-height: 80%;">
             <div class="c-aboutcontainer-text" style="display: flex;flex-direction: column; ">
                 <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#000;">Meet</h1>
@@ -67,9 +87,22 @@
                 <img src="public/img/nisha.png" style="max-height: 100%;">
             </div>
         </div>
+    </section> -->
+
+    <section class="meetcontainer">
+
+            <div class="top-box2 top-box2-b">
+                <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;">Meet</h1>
+                <h1 class="bounce-in-right" style="font-size:7vh;margin-bottom:15px;font-family: 'Inter', sans-serif !important;font-weight:700;color:#00AFB9;">Dr Nisha Varshneya.</h1>
+                <p style="padding-top: 15px;padding-bottom: 10px; border-top:2px solid #ADB5BD">Hello everyone. I am Dr Nisha Varshneya. I’m an enthusiastic educator with 26+ years of experience. I have a PhD in Biology and have taught chemistry & biology in many schools, viz., Jamna Bai, Podar, Oberai international and CPG.</p>
+                <p>My teaching style is student-centered and due to the my knowledge of the subject and my coaching methods, I have  students who perform very well and score high percentages and grades. I as a teacher, have children who get A* and A once they join despite being average students before their enrollment.</p>
+            </div>
+            <div class="top-box2 top-box2-a">
+                
+            </div>
     </section>
 
-    <section style="display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
+    <section style="display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;" class="counterclass">
         <div style="width:80%;display: flex;justify-content: space-between;align-items: center;margin: 30px;"  class="countercontainer">
             <div style="flex:1;display: flex; justify-content: center;">
                 <div style="text-align: center;">
@@ -107,9 +140,7 @@
                 }
             }, step);
             }
-            counter("count1", 0, 1000, 1500);
-            counter("count2", 0, 26, 2500);
-            counter("count3", 0, 12, 2500);
+            
     </script>
     
     <section class="whycontainer">
@@ -139,7 +170,7 @@
             <p style="font-size: 3vh; text-align: center; font-weight: 600;">Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p><br>
         </div>
         <div class="resultcardcontainer">
-            <div class="card" style="margin-top:30px;background-image: url(public/img/sanvi.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
+            <div class="card hidden" style="margin-top:30px;background-image: url(public/img/sanvi.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
                     <div class="intro">
                         <h2>Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%</h2>
                         <!-- <h1>Tarini Chavan</h1> -->
@@ -147,7 +178,7 @@
                         <!-- <h6>Tarini Chavan - IGCSE, March 19</h6> -->
                     </div>
             </div>
-            <div class="card" style="margin-top:30px;background-image: url(public/img/Tarini.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%; ">
+            <div class="card card1 hidden" style="margin-top:30px;background-image: url(public/img/Tarini.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%; ">
                     <div class="intro">
                         <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
                         <!-- <h1>Sanvi Chavan</h1> -->
@@ -155,7 +186,7 @@
                         <!-- <h6>Sanvi Chavan - IGCSE, March 19</h6> -->
                     </div>
             </div>
-            <div class="card" style="margin-top:30px;background-image: url(public/img/student3.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
+            <div class="card card2 hidden" style="margin-top:30px;background-image: url(public/img/student3.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
                 
                     <div class="intro">
                         <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
@@ -173,29 +204,29 @@
             <p style="font-size: 3vh; text-align: center; font-weight: 600;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
         </div>
         <div class="reviewcardcontainer">
-            <div class="videocard">
+            <div class="videocard hidden">
                  <div class="reviewimagecontainer"><img src="public/img/review2.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')">
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="position: absolute;bottom: 10px;">
                             <span>Play Video</span>
                         </button>
                     </div>
             </div>
-            <div class="videocard">
+            <div class="videocard videocard1 hidden">
                 <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="position: absolute;bottom: 10px;">
                             <span>Play Video</span>
                         </button>
                     </div>
             </div>
-            <div class="videocard">
+            <div class="videocard videocard2 hidden">
                 <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
                     <div class="vcintro">
                         <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="position: absolute;bottom: 10px;">
                             <span>Play Video</span>
                         </button>
                     </div>
@@ -231,7 +262,7 @@
     <section class="contactcontainer">
         <div class="contacttext" style="display:flex;flex-direction: column; gap:2vh">
             <h1>Book your</h1>
-            <h1 style="color: #00AFB9;">demo.</h1>
+            <h1 style="color: #00AFB9;" class="demo">demo.</h1>
         </div>
         <div class="contactform">
             <p>Boost your grades, starting today</p>
@@ -262,7 +293,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                     <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                   </svg>
-                <p>9322683973</p>
+                  <a href="tel:555-123-4567">9322683973</a>
             </div>
             <div class="footerend" style="display: flex; align-items: center;gap:7px;flex-wrap: wrap;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -279,5 +310,7 @@
         </div>
     </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
