@@ -544,14 +544,12 @@ html{
     min-height: 400px;
     overflow: hidden;
     height: 40vh;
-    margin:40px;
+    margin:10px;
     border-radius: 25px;
 }
 
 .videocard{
     height: 400px;
-    width: 360px;
-    margin: auto;
     box-shadow: 5px 5px 20px black;
     position: relative;
     overflow: hidden;
@@ -567,7 +565,6 @@ html{
 
 .vcintro{
     height: 210px;
-    width: 360px;
     padding: 10px;
     top: 190px;
     position: absolute;
@@ -679,4 +676,35 @@ html{
 ::-webkit-scrollbar-thumb:horizontal{
     background: #000;
     border-radius: 10px;
+}
+
+
+.reviewimagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewimagecontainer>img{
+    width: 100%;
+}
+
+@media(max-width:960px) {
+    .reviewimagecontainer>img{
+        width: 120%;
+    }
+}
+@media(max-width:800px) {
+    .reviewimagecontainer>img{
+        width: 150%;
+    }
+}
+@media(max-width:764px) {
+    .reviewimagecontainer>img{
+        width: 100%;
+    }
+}
+@media(max-width:473px) {
+    .reviewimagecontainer>img{
+        width: 150%;
+    }
 }
