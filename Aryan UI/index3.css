@@ -76,6 +76,11 @@ h1,h2,h3,h4,h5,h6,a{
     display: none;
 }
 
+c-homefooter{
+    border: 2px solid #000;
+}
+
+
 
 @media only screen and (max-width: 650px) {
     .c-homecontainer{
@@ -428,7 +433,9 @@ html{
 .resulttext{
     grid-area:resulttext;
     text-align: center;
-    font-size: 6vh;
+}
+.resulttext>h1{
+    font-size: 7vh;
 }
 
 .resultcardcontainer{
@@ -459,6 +466,7 @@ html{
     position: relative;
     overflow: hidden;
     border-radius: 26px;
+    
 }
 
 .card>img{
