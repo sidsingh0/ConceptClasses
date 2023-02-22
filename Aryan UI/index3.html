@@ -194,8 +194,10 @@
 
         function stopVideo(){
             myvideo.pause();
+            myvideo.currentTime=0;
             vcplayer.style.visibility='hidden';
             vcplayer.style.opacity=0;
+            myvideo.setAttribute("src", " ")
         }
 
         function playVideo(file){
