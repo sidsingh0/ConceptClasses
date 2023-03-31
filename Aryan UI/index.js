@@ -29,7 +29,7 @@ const observer3= new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
       console.log(entry);
       if (entry.isIntersecting){
-        entry.target.classList.add('jello-horizontal');
+        entry.target.classList.add('text-focus-in');
       }
       else{
           //entry.target.classList.remove('show');

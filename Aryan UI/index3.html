@@ -18,7 +18,7 @@
     <div class="wrapper">
     <nav id="navigation">
         <img src="logo.png" width="40px">
-        <div>
+        <div style="display: flex;gap: 4vw; " class="navigationitemlist">
             <a data-scroll class="hov-color-blue" href="#1">Home</a>
             <a data-scroll class="hov-color-blue" href="#2">About</a>
             <a data-scroll class="hov-color-blue" href="#3">Reviews</a>
@@ -30,7 +30,7 @@
         <div class="c-homecontainer">
         <div class="c-hometitle text-focus-in">
             <button class="cssbuttons-io">
-                <a data-scroll class="hov-color-blue" href="#4">Start studying today</a>
+                <a data-scroll href="#4">Start studying today</a>
               </button>  
             <h1>in Mumbai. </h1> <h1 style="color: #00AFB9;">IGCSE & IB</h1> <h1>Best classes for</h1>
         </div>
@@ -58,11 +58,10 @@
     </section>
     <div class="m-homecontainerfinalwrapper">
     <section class="m-homecontainerfinal">
-        <h1>hello</h1>
-        <p>Learn from the best teachers available. With an experience of more than 26 years, results, speak for themselves.</p>
+        <h1 style="padding-bottom: 2vh;">Best classes for <span style="color:#00AFB9">IGCSE & IB</span> in Mumbai.</h1>
         <button class="cssbuttons-io">
-            <a data-scroll class="hov-color-blue" href="#4">Start studying today</a>
-        </button>  
+            <a data-scroll href="#4">Start studying today</a>
+          </button>  
     </section>
 </div>
 
@@ -164,7 +163,7 @@
     </section><hr> <div style="visibility: hidden; translate:-50px -50px"  id="3"></div>
 
     
-    <section class="resultcontainer">
+    <section class="resultcontainer resultcontainer1">
         <div class="resulttext">
             <h1>Our<span style="color: #00AFB9;"> results</span> speak for themselves.</h1>
             <p style="font-size: 3vh; text-align: center; font-weight: 600;">Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p><br>
@@ -198,21 +197,21 @@
         </div>
     </section><hr>
 
-    <section class="resultcontainer">
+    <!-- <section class="resultcontainer">
         <div class="resulttext">
             <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
             <p style="font-size: 3vh; text-align: center; font-weight: 600;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
         </div>
         <div class="reviewcardcontainer">
-            <div class="videocard hidden">
-                 <div class="reviewimagecontainer"><img src="public/img/review2.png"></div>
-                    <div class="vcintro">
-                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="position: absolute;bottom: 10px;">
-                            <span>Play Video</span>
-                        </button>
-                    </div>
-            </div>
+                <div class="videocard hidden">
+                    <div class="reviewimagecontainer"><img src="public/img/review2.png"></div>
+                        <div class="vcintro">
+                            <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                            <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="position: absolute;bottom: 10px;">
+                                <span>Play Video</span>
+                            </button>
+                        </div>
+                </div>
             <div class="videocard videocard1 hidden">
                 <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
                     <div class="vcintro">
@@ -231,6 +230,47 @@
                         </button>
                     </div>
             </div>
+        </div>
+        <div class="videoPlayer" id="vcplayer">
+            <video src="public/img/review1.mp4" controls="true" autoplay id="myvideo"></video>
+            <img src="public/img/x-circle.svg" class="close" onclick="stopVideo()">
+        </div>
+    </section> -->
+
+    
+    <section class="resultcontainer">
+        <div class="resulttext">
+            <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
+            <p style="font-size: 3vh; text-align: center; font-weight: 600;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
+        </div>
+        <div class="newreviewcardcontainer">
+            <div class="newvideocard hidden">
+                <div class="newvideocardimage"><img src="public/img/review1.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>  
+            </div>
+            <div class="newvideocard hidden card1">
+                <div class="newvideocardimage"><img src="public/img/review2.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="newvideocard hidden card2">
+                <div class="newvideocardimage"><img src="public/img/review2.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>
+            </div> -->
         </div>
         <div class="videoPlayer" id="vcplayer">
             <video src="public/img/review1.mp4" controls="true" autoplay id="myvideo"></video>
@@ -258,21 +298,22 @@
     </script>
     
     
+    
     <div class="contactcontainerwrapper" id="4">
     <section class="contactcontainer">
         <div class="contacttext" style="display:flex;flex-direction: column; gap:2vh">
-            <h1>Book your</h1>
+            <h1>Book a</h1>
             <h1 style="color: #00AFB9;" class="demo">demo.</h1>
         </div>
         <div class="contactform">
             <p>Boost your grades, starting today</p>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <div><input type="checkbox" name="check" style="margin-right: 5px;"><label for="check">Agree to our privacy policy</label></div>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input id="phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "10" placeholder="Phone" required>
+            <div><label for="check" style="color:#757575;">By proceeding, you agree to our privacy policy.</label></div>
             <div class="contactformbuttons">
                 <button class="cssbuttons-io">
-                    <span>Get consultation</span>
+                    <a id="mailbutton">Get consultation</a>
                   </button>  
                   <button class="cssbuttons-io" style="background-color: #00AFB9;">
                     <span>Call us</span>
@@ -281,6 +322,7 @@
         </div>
         </div>
     </section>
+
     <div class="footercontainer">
         
         <div class="footer">
@@ -311,6 +353,18 @@
     </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $("#mailbutton").on('click',function(){
+            const email=$('#email').val();
+            const name=$('#email').val();
+            const phone=$('#phone').val();
+
+            window.open(`mailto:sidsinghcs@gmail.com?subject=Inquiry for concept classes&body=Hello,I am ${name} and I interested in Concept Classes. Below are my contact details. Phone:${phone} Email:${email}`);
+
+        })
+
+    </script>
 </body>
 </html>
