@@ -1,7 +1,7 @@
 
 const observer= new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
-      console.log(entry);
+      // console.log(entry);
       if (entry.isIntersecting){
           entry.target.classList.add('show');
       }
@@ -13,11 +13,11 @@ const observer= new IntersectionObserver((entries)=>{
 
 const observer2= new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
-      console.log(entry);
+      // console.log(entry);
       if (entry.isIntersecting){
         counter("count1", 0, 1000, 1500);
         counter("count2", 0, 26, 2500);
-        counter("count3", 0, 12, 2500);
+        counter("count3", 0, 365, 2500);
       }
       else{
           //entry.target.classList.remove('show');
