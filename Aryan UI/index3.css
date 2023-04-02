@@ -160,7 +160,7 @@ c-homefooter{
     }
 
     .m-homecontainerfinalwrapper{
-        height: 100svh;
+        height: 100vh;
         background-image: url("public/img/books.png");
         background-position: center;
         background-clip: content-box;
