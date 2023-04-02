@@ -290,7 +290,7 @@
                     <div class="videocard1img"><img src="public/img/review1.png"></div>
                     <p>"Dr. Nisha Varshney Ma'am is an amazing teacher who is thorough, detail oriented and explains biology concepts beautifully! I am grateful she tutored me and that has been my stepping stone into getting MBBS and becoming a Doctor today!"<br><br><span style="font-weight: lighter;">Rashmi Chandra | Biology 12th</span></p><br>
                 </div>
-                <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                <button class="cssbuttons-io vpop" data-type="youtube" data-id="WD3fViFgKe0" data-autoplay='true' style="margin-top: auto; margin-right: auto;">
                     <span>Play Video</span>
                 </button>
             </div>
@@ -299,14 +299,17 @@
                     <div class="videocard1img"><img src="public/img/review2.png"></div>
                     <p>“The way they explain difficult concepts helped me. I was not good at a few things, however they handheld me and helped me to learn things very quickly. Not just bookish knowledge, a lot of life lessons that I still apply were taught by them.”<br><br><span style="font-weight: lighter;">Anuj Jaisinghani | Bio & Chem 9th-12th</span></p><br>
                 </div>
-                <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="margin-top: auto; margin-right: auto;">
+                <button class="cssbuttons-io vpop" data-type="youtube" data-id="u1HXxEWVQo4" data-autoplay='true' style="margin-top: auto; margin-right: auto;">
                     <span>Play Video</span>
                 </button>
             </div>
         </div>
-        <div class="videoPlayer" id="vcplayer">
-            <video src="public/img/review1.mp4" muted controls="true" id="myvideo"></video>
-            <img src="public/img/x-circle.svg" class="close" onclick="stopVideo()">
+        <div id="video-popup-overlay"></div>
+        <div id="video-popup-container">
+        <div id="video-popup-close" class="fade">&#10006;</div>
+        <div id="video-popup-iframe-container">
+            <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
         </div>
     </section>
 
