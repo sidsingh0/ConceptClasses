@@ -305,7 +305,7 @@
             </div>
         </div>
         <div class="videoPlayer" id="vcplayer">
-            <video src="public/img/review1.mp4" controls="true" autoplay id="myvideo"></video>
+            <video src="public/img/review1.mp4" muted controls="true" id="myvideo"></video>
             <img src="public/img/x-circle.svg" class="close" onclick="stopVideo()">
         </div>
     </section>
@@ -374,11 +374,12 @@
         var myvideo = document.getElementById("myvideo");
 
         function stopVideo(){
-            myvideo.pause();
+            
             myvideo.currentTime=0;
             vcplayer.style.visibility='hidden';
             vcplayer.style.opacity=0;
             myvideo.setAttribute("src", " ")
+            myvideo.pause();
         }
 
         function playVideo(file){
