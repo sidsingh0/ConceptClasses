@@ -47,5 +47,12 @@ Counter.forEach((el)=>observer2.observe(el))
 const demo= document.querySelectorAll(".demo");
 demo.forEach((el)=>observer3.observe(el))
 
+const hamburger = document.querySelector(".hamburger");
+const navigationitemlist = document.querySelector(".navigationitemlist");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navigationitemlist.classList.toggle("active");
+})
 
 
