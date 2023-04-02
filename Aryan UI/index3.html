@@ -14,9 +14,17 @@
     <title>Tuitions</title>
 </head>
 <body>
+    
     <script src="index.js" defer></script>
+    <div id="myLinks" style="padding:8px 41px 8px 41px;display:flex;flex-direction:column;align-items:flex-end;z-index:100;background-color:#212529;color: white;translate:0px 56px;position: fixed;right:16px;top:2px;border-radius: 13px;">
+        <a href="#" style="margin:0;padding:5px 0px 5px 0px">Home</a>
+        <a href="#2" style="margin:0;padding:5px 0px 5px 0px">About</a>
+        <a href="#3" style="margin:0;padding:5px 0px 5px 0px">Reviews</a>
+        <a href="#4" style="margin:0;padding:5px 0px 5px 0px">Contact</a>
+    </div>
     <div class="wrapper">
     <nav id="navigation">
+        
         <div class="brand" style="display: flex; align-items: center;"><img src="logo.png" width="40px" style="margin-right: 0.5rem;"><p style="font-size: 2.5vh;font-weight: 400; color: #fffdff;">Concept Classes</p></div>
         <div style="display: flex;gap: 4vw; margin-left: auto;" class="c-nav navigationitemlist">
             <a data-scroll class="hov-color-blue" href="#1">Home</a>
@@ -24,13 +32,13 @@
             <a data-scroll class="hov-color-blue" href="#3">Reviews</a>
             <a data-scroll class="hov-color-blue" href="#4">Contact</a>
         </div>
-        <div class="hamburger">
+        <div class="hamburger" style="margin-left: auto;" id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
     </nav>
-
+    
     <section id="1" class="c-homecontainerwrapper" style="height:100vh;position: relative;display: flex;justify-content: center;align-items: center;background-image:url('public/img/books.png');">
         <div class="c-homecontainer">
         <div class="c-hometitle text-focus-in">
@@ -442,6 +450,10 @@
 
             window.open(`mailto:sidsinghcs@gmail.com?subject=Inquiry for concept classes&body=Hello,I am ${name} and I interested in Concept Classes. Below are my contact details. Phone:${phone} Email:${email}`);
 
+        })
+        $('#myLinks').hide();
+        $('#hamburger').on('click',function(){
+            $('#myLinks').toggle();
         })
 
     </script>
