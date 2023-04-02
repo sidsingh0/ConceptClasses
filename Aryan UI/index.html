@@ -4,50 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get the best IGCSE and IB classes in Mumbai from expert tutors, available online for international students. Our courses are designed to help students excel in their exams and achieve academic success. Join our online classes today and prepare for your IGCSE and IB exams with ease!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="index.css">
-    <title>Tuitions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="index3.css">
+    <title>Concept Classes</title>
+    <link rel="icon" href="logo.png">
 </head>
 <body>
+    
+    <script src="index.js" defer></script>
+    <div id="myLinks" style="padding:8px 41px 8px 41px;display:flex;flex-direction:column;align-items:flex-end;z-index:100;background-color:#212529;color: white;translate:0px 56px;position: fixed;right:16px;top:2px;border-radius: 13px;">
+        <a href="#" style="margin:0;padding:5px 0px 5px 0px">Home</a>
+        <a href="#2" style="margin:0;padding:5px 0px 5px 0px">About</a>
+        <a href="#3" style="margin:0;padding:5px 0px 5px 0px">Reviews</a>
+        <a href="#4" style="margin:0;padding:5px 0px 5px 0px">Contact</a>
+    </div>
     <div class="wrapper">
     <nav id="navigation">
-        <img src="logo.png" width="40px">
-        <div>
+        
+        <div class="brand" style="display: flex; align-items: center;"><img src="logo.png" width="40px" style="margin-right: 0.5rem;"><p style="font-size: 2.5vh;font-weight: 400; color: #fffdff;">Concept Classes</p></div>
+        <div style="display: flex;gap: 4vw; margin-left: auto;" class="c-nav navigationitemlist">
             <a data-scroll class="hov-color-blue" href="#1">Home</a>
             <a data-scroll class="hov-color-blue" href="#2">About</a>
             <a data-scroll class="hov-color-blue" href="#3">Reviews</a>
             <a data-scroll class="hov-color-blue" href="#4">Contact</a>
         </div>
+        <div class="hamburger" style="margin-left: auto;" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
-
-    <section id="1" style="height:100vh;position: relative;display: flex;justify-content: center;align-items: center;background-image:url('public/img/books.png');">
+    
+    <section id="1" class="c-homecontainerwrapper" style="height:100vh;position: relative;display: flex;justify-content: center;align-items: center;background-image:url('public/img/books.png');">
         <div class="c-homecontainer">
-        <div class="c-hometitle">
+        <div class="c-hometitle text-focus-in">
             <button class="cssbuttons-io">
-                <span>Start studying today</span>
+                <a data-scroll href="#4">Start studying today</a>
               </button>  
-            <h1>in Mumbai. </h1> <h1 style="color: #00AFB9;">IGCSE & IB</h1> <h1>Best classes for</h1>
+            <h6 style="margin-left: 20px;">Online & Offline</h6><h1>in Mumbai. </h1> <h1 style="color: #00AFB9;">IGCSE & IB</h1> <h1>Best classes for</h1>
         </div>
         <div class="c-homebody">
-            <div class="c-homebody-text">
+            <div class="c-homebody-text text-focus-in">
                 <p>Learn from the best teachers available. With an experience of more than 26 years, results, speak for themselves.</p>
             </div>
         </div>
+    </div>
+    
+    <div style="align-self:end;flex-grow:1;z-index: 10;display:flex;justify-content: space-evenly;height:70px;align-items: center;background: linear-gradient(0deg, rgba(0,0,0,1) 29%, rgba(0,212,255,0) 100%);flex-wrap: wrap;">
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="book-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1; font-size: 1.5rem ;">IITian Faculty</p>
         </div>
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="school-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 1.5rem ;">PhD Teachers</p>
+        </div>
+        <div style="color:#CED4DA;display: flex;" class="slide-in-bottom">
+            <ion-icon name="earth-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 1.5rem ;">International Recognition</p>
+        </div>
+    </div>
     </section>
+    <div class="m-homecontainerfinalwrapper">
+    <section class="m-homecontainerfinal">
+        <h1 style="padding-bottom: 2vh;">Best classes for <span style="color:#00AFB9">IGCSE & IB</span> in Mumbai.</h1>
+        <h4 style="margin-left: 9px; margin-bottom: 12px;">Online & Offline</h4>
+        <button class="cssbuttons-io">
+            <a data-scroll href="#4">Start studying today</a>
+          </button>
+    </section>
+    <div class="mobilecontainer" style="padding:5px;align-self:end;translate:0px -90px;flex-grow:1;z-index: 10;justify-content: space-evenly;height:90px;align-items: center;background: linear-gradient(0deg, rgba(0,0,0,1) 29%, rgba(0,212,255,0) 100%);flex-wrap: wrap;">
+        <div style="color:#CED4DA;display: flex;align-items: center;" class="slide-in-bottom">
+            <ion-icon name="book-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1; font-size: 2vh!important;">IITian Faculty</p>
+        </div>
+        <div style="color:#CED4DA;display: flex;align-items: center;" class="slide-in-bottom">
+            <ion-icon name="school-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 2vh!important;">PhD Teachers</p>
+        </div>
+    </div>
+    </div>
+
+    <div style="visibility: hidden; translate:-70px -70px"  id="2"></div>
 
 
-
-
-    <section class="c-aboutcontainersection" style="height:85vh;" id="2">
+    <!-- <section class="c-aboutcontainersection" style="height:85vh;">
         <div class="c-aboutcontainer" style="max-height: 80%;">
             <div class="c-aboutcontainer-text" style="display: flex;flex-direction: column; ">
                 <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#000;">Meet</h1>
-                <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#00AFB9;">Dr Nisha Varshneya.</h1>
+                <h1 class="bounce-in-right" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#00AFB9;">Dr Nisha Varshneya.</h1>
                 <br><hr><br>
                 <p>Hello everyone. I am Dr Nisha Varshneya. I’m an enthusiastic educator with 26+ years of experience. I have a PhD in Biology and have taught chemistry & biology in many schools, viz., Jamna Bai, Podar, Oberai international and CPG.</p>
                 <br>
@@ -58,33 +110,64 @@
                 </button>
             </div>
             <div class="c-aboutcontainer-photo" style="width:100%;overflow: hidden;">
-                <img src="public/img/nisha.png" style="max-height: 120%;">
+                <img src="public/img/nisha.png" style="max-height: 100%;">
             </div>
         </div>
+    </section> -->
+
+    <section class="meetcontainer">
+
+            <div class="top-box2 top-box2-b">
+                <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;">Meet</h1>
+                <h1 class="bounce-in-right" style="font-size:7vh;margin-bottom:15px;font-family: 'Inter', sans-serif !important;font-weight:700;color:#00AFB9;">Dr Nisha Varshneya.</h1>
+                <p style="padding-top: 15px;padding-bottom: 10px; border-top:2px solid #ADB5BD">Hello everyone. I am Dr Nisha Varshneya. I’m an enthusiastic educator with 26+ years of experience. I have a PhD in Biology and have taught chemistry & biology in many schools, viz., Jamna Bai, Podar, Oberai international and CPG.</p>
+                <p>My teaching style is student-centered and due to the my knowledge of the subject and my coaching methods, I have  students who perform very well and score high percentages and grades. I as a teacher, have children who get A* and A once they join despite being average students before their enrollment.</p>
+            </div>
+            <div class="top-box2 top-box2-a">
+                
+            </div>
     </section>
 
-    <section style="height:20vh;display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
-        <div style="width:80%;display: flex;justify-content: space-between;align-items: center;">
-            <div style="flex:1;display: flex; justify-content: center;border-right: 2px solid #ADB5BD;">
+    <section style="display: flex;justify-content: center;align-items: center;background-image:url('public/img/counter.png');  background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;" class="counterclass">
+        <div style="width:80%;display: flex;justify-content: space-between;align-items: center;margin: 30px;"  class="countercontainer">
+            <div style="flex:1;display: flex; justify-content: center;">
                 <div style="text-align: center;">
-                    <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">1000+</h1>
+                    <h1 id="count1" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;"></h1>
                     <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">students</p>
                 </div>
             </div>
-            <div style="flex:1;display: flex; justify-content: center;border-right: 2px solid #ADB5BD;">
+            <div style="flex:1;display: flex; justify-content: center;border-left: 2px solid #ADB5BD;border-right: 2px solid #ADB5BD;" class="countercontainerline">
                 <div style="text-align: center;">
-                <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">26+</h1>
+                <h1 id="count2" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">26+</h1>
                 <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">Years of experience</p>
                 </div>
             </div>
             <div style="flex:1;display: flex; justify-content: center;">
                 <div style="text-align: center;">
-                <h1 style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">12+</h1>
-                <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">Teaching sessions</p>
+                <h1 id="count3" style="font-size:7vh;font-family: 'Inter', sans-serif !important;font-weight:700;color:#fffdff;">364</h1>
+                <p style="font-size:2vh;font-family: 'Inter', sans-serif !important; font-weight: 600;color:#fffdff;">Days learning</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function counter(id, start, end, duration) {
+            let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                obj.textContent = `${current}+`;
+                if (current == end) {
+                clearInterval(timer);
+                }
+            }, step);
+            }
+            
+    </script>
     
     <section class="whycontainer">
         <header class="showcase">
@@ -96,138 +179,234 @@
                 <li>Provides coaching and tutorials to IGCSE (IX, X) and IB students.</li>
                 <li>Subjects offered are Physics, Chemistry, Maths and Biology.</li>
                 <li>Includes assessments, worksheets, tests, and doubt-clearing sessions.</li>
-                <li>Regular tests conducted.</li>
+                <li>Regular test series conducted.</li>
                 <li>Online Mode of teaching also available.</li>
-                <li>Tailored study materials.</li>
+                <li>Regular and crash courses.</li>
             </ul>
         </div>
         <div class="top-box top-box-a">
             <img src="public/img/Rectangle 24D2.png">
         </div>
-    </section>
-    <br><hr>
+    </section><hr> <div style="visibility: hidden; translate:-50px -50px"  id="3"></div>
+
+    <!-- <section class="resultcontainer">
+        <div class="resulttext">
+            <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
+            <p style="font-size: 3vh; text-align: center; font-weight: 600;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
+        </div>
+        <div class="reviewcardcontainer">
+                <div class="videocard hidden">
+                    <div class="reviewimagecontainer"><img src="public/img/review2.png"></div>
+                        <div class="vcintro">
+                            <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                            <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="position: absolute;bottom: 10px;">
+                                <span>Play Video</span>
+                            </button>
+                        </div>
+                </div>
+            <div class="videocard videocard1 hidden">
+                <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
+                    <div class="vcintro">
+                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="position: absolute;bottom: 10px;">
+                            <span>Play Video</span>
+                        </button>
+                    </div>
+            </div>
+            <div class="videocard videocard2 hidden">
+                <div class="reviewimagecontainer"><img src="public/img/review1.png"></div>
+                    <div class="vcintro">
+                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="position: absolute;bottom: 10px;">
+                            <span>Play Video</span>
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <div class="videoPlayer" id="vcplayer">
+            <video src="public/img/review1.mp4" controls="true" autoplay id="myvideo"></video>
+            <img src="public/img/x-circle.svg" class="close" onclick="stopVideo()">
+        </div>
+    </section> -->
 
     <section class="resultcontainer">
-        <header class="head">
-            <h1>Inspired Students.</h1>
-            <h1>Inspired <span style="color: #00AFB9;"> Results.</span></h1>
-        </header>
-        <div class="sub">
-            <p>Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p>
+        <div class="resulttext">
+            <h1>Our <span style="color: #00AFB9;">results</span> speak for themselves.</h1>
+            <p style="font-size: 3vh; text-align: center; font-weight: 400;">Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p>
         </div>
-        <div class="cardview">
-            <div class="c-resultcontainer">
-                <div class="card">
-                    <img src="public/img/Tarini.jpg" alt="Tarini">
-                    <div class="intro">
-                        <h1>Tarini Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%</h2>
-                        <h6>Tarini Chavan - IGCSE, March 19</h6>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="public/img/sanvi.JPG" alt="Sanvi">
-                    <div class="intro">
-                        <h1>Sanvi Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                        <h6>Sanvi Chavan - IGCSE, March 19</h6>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="public/img/student3.jpg" alt="Student3">
-                    <div class="intro">
-                        <h1>Sanvi Chavan</h1>
-                        <p>IGCSE, March 19 </p>
-                        <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                        <h6>Sanvi Chavan - IGCSE, March 19</h6>
-                    </div>
-                </div>
+        <div class="newreviewcardcontainer">
+            <div class="videocard1 hidden" style="display: flex; flex-direction: column;background-color: #212529;">
+                <div class="videocard1img videocardimgbig"><img src="public/img/sanvi.jpg"></div>
+                <div class="videocardbigcontent" style="text-align: center;color:white">
+                    <p style="font-weight: 600;">Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%<br><span style="font-weight: 300!important;color:#CED4DA">Sanvi Chavan | IGCSE, March 19</span></p>
+            </div>
+            </div>
+            <div class="videocard1 hidden card1" style="display: flex; flex-direction: column;background-color: #212529;">
+                <div class="videocard1img videocardimgbig"><img src="public/img/Tarini.jpg"></div>
+                <div class="videocardbigcontent" style="text-align: center;color:white">
+                    <p style="font-weight: 600;">Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%<br style="margin-top: 1rem!important;"><span style="font-weight: 300!important;color:#CED4DA">Tarini Chavan | IGCSE, March 19</span></p>
+            </div>
             </div>
         </div>
     </section>
-    <hr>
 
-    <section class="resultcontainer" id="3">
-        <header class="head">
+
+
+    <section class="resultcontainer">
+        <div class="resulttext">
             <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
-        </header>
-        <div class="sub">
-            <p style="text-align: center;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
-            <br>
+            <p style="font-size: 3vh; text-align: center; font-weight: 400;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p>
         </div>
-        <div class="cardview">
-            <div class="c-videocontainer">
-                <div class="videocard">
-                    <video src="public/img/review1.mp4"></video>
-                    <div class="vcintro">
-                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
-                            <span>Play Video</span>
-                        </button>
+        <div class="newreviewcardcontainer">
+            <!-- <div class="newvideocard hidden">
+                <div class="newvideocardimage"><img src="public/img/review1.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>  
+            </div>
+            <div class="newvideocard hidden card1">
+                <div class="newvideocardimage"><img src="public/img/review2.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>
+            </div> -->
+            <!-- <div class="newvideocard hidden card2">
+                <div class="newvideocardimage"><img src="public/img/review2.png"></div>
+                <div class="newvideointro">
+                    <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p><br>
+                    <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="margin-top: auto; margin-right: auto;">
+                        <span>Play Video</span>
+                    </button>
+                </div>
+            </div> -->
+            <div class="videocard1 hidden" style="display: flex; flex-direction: column;">
+                <div class="videocard1content">
+                    <div class="videocard1img"><img src="public/img/review1.png"></div>
+                    <p>"Dr. Nisha Varshney Ma'am is an amazing teacher who is thorough, detail oriented and explains biology concepts beautifully! I am grateful she tutored me and that has been my stepping stone into getting MBBS and becoming a Doctor today!"<br><br><span style="font-weight: lighter;">Rashmi Chandra | Biology 12th</span></p><br>
+                </div>
+                <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                    <span>Play Video</span>
+                </button>
+            </div>
+            <div class="videocard1 card2 hidden" style="display: flex; flex-direction: column;">
+                <div class="videocard1content">
+                    <div class="videocard1img"><img src="public/img/review2.png"></div>
+                    <p>“The way they explain difficult concepts helped me. I was not good at a few things, however they handheld me and helped me to learn things very quickly. Not just bookish knowledge, a lot of life lessons that I still apply were taught by them.”<br><br><span style="font-weight: lighter;">Anuj Jaisinghani | Bio & Chem 9th-12th</span></p><br>
+                </div>
+                <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="margin-top: auto; margin-right: auto;">
+                    <span>Play Video</span>
+                </button>
+            </div>
+        </div>
+        <div class="videoPlayer" id="vcplayer">
+            <video src="public/img/review1.mp4" controls="true" autoplay id="myvideo"></video>
+            <img src="public/img/x-circle.svg" class="close" onclick="stopVideo()">
+        </div>
+    </section>
+
+
+    <section class="resultcontainer">
+        <div class="resulttext">
+            <h1>Testimonials<span style="color: #00AFB9;">.</span></h1>
+            <!-- <p style="font-size: 3vh; text-align: center; font-weight: 600;">I am pleased to report that the results of this year's cohort (February-March) are once again exceptional, with a significant number of students achieving outstanding scores like 97% and 98% in Biology and Chemistry.</p> -->
+        </div>
+        <div class="newreviewcardcontainer">
+            <div class="testi_container">
+
+                <div class="testi_card">
+                    <img src="./quote.png" class="quote">
+                    <p style="margin-bottom: 75px;">"I was looking for a good Tuition teacher for my son Tejasvi when he was in class XI th for Biology and Chemistry for the CBSE stream.
+                        I had heard of Mrs.Nisha Varsh hey from some parents with older kids and decided to go with her.
+                        Mrs.Varshney was a very pleasant person to meet and I was convinced that   my son would be in some very capable hands.
+                        My son did EXTREMELY well throughout class XI and class XII th.
+                        Frequent tests,kept the students on their toes. Her markings were always detailed and fair. She always gave the parents frequent feedbacks about their child's progress.
+                        I cannot praise Mrs.Varshney enough."</p>
+                    <div class="test_person">
+                        <div class="reviewimg" style="margin-right:5px;border-radius: 10px;height: 60px;width: 60px;display: flex;align-items: center;justify-content: center;object-fit: cover;overflow:hidden;">
+                            <img src="./soniahora.jpeg" style="border-radius: 10px;width: 110%;">
+                        </div>
+                        <div class="name_desig">
+                            <h4 style="color:#00AFB9">Sonia Hora</h4>
+                            <p>Mumbai</p>
+                        </div>
                     </div>
                 </div>
-                <div class="videocard">
-                    <video src="public/img/review1.mp4"></video>
-                    <div class="vcintro">
-                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
-                            <span>Play Video</span>
-                        </button>
+                <div class="testi_card">
+                    <img src="./quote.png" class="quote">
+                    <p style="margin-bottom: 75px;">"My son is in Pathways School Gurgaon, MYP3. He takes science ( biology and chemistry) classes from Mrs Nisha Varshneya from last 1 year. We have moved from American curriculum to IB which was a drastic change for my 8th grader but Mrs Varshney helped me and took charge of taking him through this new board. We have been taking online classes with her and Mrs Varshney is always prompt and makes sure the student is participating and responding to the subject good. As a parent I am very satisfied with her teaching style and the feedbacks which she gives to me time and again.
+                        Thanking her for all her efforts with my son."</p>
+                    <div class="test_person">
+                        <div class="reviewimg" style="margin-right:5px;border-radius: 10px;height: 60px;width: 60px;display: flex;align-items: center;justify-content: center;object-fit: cover;overflow:hidden;">
+                            <img src="./profile.png" style="border-radius: 10px;width: 110%;">
+                        </div>
+                        <div class="name_desig">
+                            <h4 style="color:#00AFB9">Raina Gupta</h4>
+                            <p>Gurgaon</p>
+                        </div>
                     </div>
                 </div>
-                <div class="videocard">
-                    <video src="public/img/review1.mp4"></video>
-                    <div class="vcintro">
-                        <p>“Mrs. Nisha Varshneya was instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Dheer Upadhyay’s Mother | National Chemistry Topper</span></p>
-                        <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')">
-                            <span>Play Video</span>
-                        </button>
+                
+                <div class="testi_card">
+                    <img src="./quote.png" class="quote">
+                    <p style="margin-bottom: 75px;">"As Albert Einstein rightly said, “to keep your balance, you must keep moving.” my belief in this has dramatically increased after studying under the guidance of Nisha ma’am. My name is Ritkriti, and I’m studying in grade 10 in Bangalore. Having had online classes, it was harder for me to cope, but Nisha ma’am was always open to having extra classes to help me. I have struggled with biology and chemistry, and balancing these with the other seven subjects seemed like a monumental task, but having regular classes, made my concepts stronger. I would highly recommend learning these subjects under her guidance."</p>
+                    <div class="test_person">
+                        <div class="reviewimg" style="margin-right:5px;border-radius: 10px;height: 60px;width: 60px;display: flex;align-items: center;justify-content: center;object-fit: cover;overflow:hidden;">
+                            <img src="./profile1.png" style="border-radius: 10px;translate: 5px;width: 110%;">
+                        </div>
+                        <div class="name_desig">
+                            <h4 style="color:#00AFB9">Ritkriti</h4>
+                            <p>Bangalore</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="video-player" id="videoplayer">
-            <video width="100%" controls autoplay id="myVideo">
-                <source src="public/img/review1.mp4" type="video/mp4">
-            </video>
-            <img src="public/img/x-circle.svg" class="close-btn" onclick="stopVideo()">
         </div>
     </section>
 
     <script>
-        var videoplayer = document.getElementById("videoplayer");
-        var myVideo = document.getElementById("myVideo");
+        var vcplayer = document.getElementById("vcplayer");
+        var myvideo = document.getElementById("myvideo");
 
         function stopVideo(){
-            videoplayer.style.display = "none";
+            myvideo.pause();
+            myvideo.currentTime=0;
+            vcplayer.style.visibility='hidden';
+            vcplayer.style.opacity=0;
+            myvideo.setAttribute("src", " ")
         }
 
         function playVideo(file){
-            myVideo.src = file;
-            videoplayer.style.display = "block"
+            myvideo.src = file;
+            vcplayer.style.visibility='visible';
+            vcplayer.style.opacity=1;
         }
     </script>
-
-
-    <div class="contactcontainerwrapper">
-    <section class="contactcontainer" id="4">
+    
+    
+    
+    <div class="contactcontainerwrapper" id="4">
+    <section class="contactcontainer">
         <div class="contacttext" style="display:flex;flex-direction: column; gap:2vh">
-            <h1>Book your</h1>
-            <h1 style="color: #00AFB9;">demo.</h1>
+            <h1>Book a</h1>
+            <h1 style="color: #00AFB9;" class="demo">free demo.</h1>
         </div>
         <div class="contactform">
-            <p>Boost your grades, starting today</p>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <div><input type="checkbox" name="check" style="margin-right: 5px;"><label for="check">Agree to our privacy policy</label></div>
+            <p>Boost your grades, starting today.</p>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input id="phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "10" placeholder="Phone" required>
+            <div><label for="check" style="color:#757575;">By proceeding, you agree to our privacy policy.</label></div>
             <div class="contactformbuttons">
                 <button class="cssbuttons-io">
-                    <span>Get consultation</span>
+                    <a id="mailbutton">Get consultation</a>
                   </button>  
-                  <button class="cssbuttons-io" style="background-color: #00AFB9;">
+                  <button class="cssbuttons-io" id="callbutton" style="background-color: #00AFB9;">
                     <span>Call us</span>
                   </button>  
             </div>
@@ -235,7 +414,55 @@
         </div>
     </section>
 
-    
+    <div class="footercontainer">
+        
+        <div class="footer">
+            
+            <div class="footerleft">
+                <p>2023, Concept Classes</p>
+            </div>
+            <!-- <div class="footermiddle"></div> -->
+            <div class="footerright" style="display: flex; gap:5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <a href="tel: 9322683973">9322683973</a>
+            </div>
+            <div class="footerend" style="display: flex; align-items: center;gap:7px;flex-wrap: wrap;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+            </div>
+        </div>
     </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $("#mailbutton").on('click',function(){
+            const email=$('#email').val();
+            const name=$('#email').val();
+            const phone=$('#phone').val();
+
+            window.open(`mailto:sidsinghcs@gmail.com?subject=Inquiry for concept classes&body=Hello,I am ${name} and I interested in Concept Classes. Below are my contact details. Phone:${phone} Email:${email}`);
+
+        })
+        $('#myLinks').hide();
+        $('#hamburger').on('click',function(){
+            $('#myLinks').toggle();
+        })
+        $('#callbutton').on('click',function(){
+            window.open(`tel:9322683973`);
+        })
+
+    </script>
 </body>
 </html>

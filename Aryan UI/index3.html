@@ -403,7 +403,7 @@
                 <button class="cssbuttons-io">
                     <a id="mailbutton">Get consultation</a>
                   </button>  
-                  <button class="cssbuttons-io" style="background-color: #00AFB9;">
+                  <button class="cssbuttons-io" id="callbutton" style="background-color: #00AFB9;">
                     <span>Call us</span>
                   </button>  
             </div>
@@ -456,7 +456,9 @@
         $('#hamburger').on('click',function(){
             $('#myLinks').toggle();
         })
-
+        $('#callbutton').on('click',function(){
+            window.open(`tel:9322683973`);
+        })
     </script>
 </body>
 </html>
