@@ -17,12 +17,15 @@
     <script src="index.js" defer></script>
     <div class="wrapper">
     <nav id="navigation">
-        <img src="logo.png" width="40px">
-        <div style="display: flex;gap: 4vw; " class="navigationitemlist">
+        <div class="brand" style="display: flex; align-items: center;"><img src="logo.png" width="40px" style="margin-right: 0.5rem;"><p style="font-size: 2.5vh;font-weight: 400; color: #fffdff;">Concept Classes</p></div>
+        <div style="display: flex;gap: 4vw; margin-left: auto;" class="c-nav navigationitemlist">
             <a data-scroll class="hov-color-blue" href="#1">Home</a>
             <a data-scroll class="hov-color-blue" href="#2">About</a>
             <a data-scroll class="hov-color-blue" href="#3">Reviews</a>
             <a data-scroll class="hov-color-blue" href="#4">Contact</a>
+        </div>
+        <div class="hamburger">
+            
         </div>
     </nav>
 
@@ -61,9 +64,19 @@
         <h1 style="padding-bottom: 2vh;">Best classes for <span style="color:#00AFB9">IGCSE & IB</span> in Mumbai.</h1>
         <button class="cssbuttons-io">
             <a data-scroll href="#4">Start studying today</a>
-          </button>  
+          </button>
     </section>
-</div>
+    <div class="mobilecontainer" style="padding:5px;align-self:end;translate:0px -90px;flex-grow:1;z-index: 10;justify-content: space-evenly;height:90px;align-items: center;background: linear-gradient(0deg, rgba(0,0,0,1) 29%, rgba(0,212,255,0) 100%);flex-wrap: wrap;">
+        <div style="color:#CED4DA;display: flex;align-items: center;" class="slide-in-bottom">
+            <ion-icon name="book-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1; font-size: 2vh!important;">IITian Faculty</p>
+        </div>
+        <div style="color:#CED4DA;display: flex;align-items: center;" class="slide-in-bottom">
+            <ion-icon name="school-outline" size="large" style="margin-right:7px;"></ion-icon>
+            <p style=" font-weight: 300!important;flex:1;font-size: 2vh!important;">PhD Teachers</p>
+        </div>
+    </div>
+    </div>
 
     <div style="visibility: hidden; translate:-70px -70px"  id="2"></div>
 
@@ -162,41 +175,6 @@
         </div>
     </section><hr> <div style="visibility: hidden; translate:-50px -50px"  id="3"></div>
 
-    
-    <section class="resultcontainer resultcontainer1">
-        <div class="resulttext">
-            <h1>Our<span style="color: #00AFB9;"> results</span> speak for themselves.</h1>
-            <p style="font-size: 3vh; text-align: center; font-weight: 400;">Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p><br>
-        </div>
-        <div class="resultcardcontainer">
-            <div class="card hidden" style="margin-top:30px;background-image: url(public/img/sanvi.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;">
-                    <div class="intro">
-                        <h2>Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%</h2>
-                        <!-- <h1>Tarini Chavan</h1> -->
-                        <p>Tarini Chavan | IGCSE, March 19 </p>
-                        <!-- <h6>Tarini Chavan - IGCSE, March 19</h6> -->
-                    </div>
-            </div>
-            <div class="card card1 hidden" style="margin-top:30px;background-image: url(public/img/Tarini.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%; ">
-                    <div class="intro">
-                        <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                        <!-- <h1>Sanvi Chavan</h1> -->
-                        <p>Sanvi Chavan | IGCSE, March 19 </p>
-                        <!-- <h6>Sanvi Chavan - IGCSE, March 19</h6> -->
-                    </div>
-            </div>
-            <div class="card card1 hidden" style="margin-top:30px;background-image: url(public/img/Tarini.JPG); background-size: cover;background-repeat: no-repeat;background-position: 50% 50%; ">
-                <div class="intro">
-                    <h2>Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%</h2>
-                    <!-- <h1>Sanvi Chavan</h1> -->
-                    <p>Sanvi Chavan | IGCSE, March 19 </p>
-                    <!-- <h6>Sanvi Chavan - IGCSE, March 19</h6> -->
-                </div>
-            </div>
-            
-        </div>
-    </section><hr>
-
     <!-- <section class="resultcontainer">
         <div class="resulttext">
             <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
@@ -237,7 +215,29 @@
         </div>
     </section> -->
 
-    
+    <section class="resultcontainer">
+        <div class="resulttext">
+            <h1>Our <span style="color: #00AFB9;">results</span> speak for themselves.</h1>
+            <p style="font-size: 3vh; text-align: center; font-weight: 400;">Meet our Toppers. Our results reflect the passion, hard work and efforts of our students and teachers.</p>
+        </div>
+        <div class="newreviewcardcontainer">
+            <div class="videocard1 hidden" style="display: flex; flex-direction: column;background-color: #212529;">
+                <div class="videocard1img videocardimgbig"><img src="public/img/sanvi.jpg"></div>
+                <div class="videocardbigcontent" style="text-align: center;color:white">
+                    <p style="font-weight: 600;">Maths : 100%<br>Chemistry : 97%<br>Biology : 96%  &nbspPhysics : 93%<br><span style="font-weight: 300!important;color:#CED4DA">Sanvi Chavan | IGCSE, March 19</span></p>
+            </div>
+            </div>
+            <div class="videocard1 hidden card1" style="display: flex; flex-direction: column;background-color: #212529;">
+                <div class="videocard1img videocardimgbig"><img src="public/img/Tarini.jpg"></div>
+                <div class="videocardbigcontent" style="text-align: center;color:white">
+                    <p style="font-weight: 600;">Maths : 95%<br>Chemistry : 96%<br>Biology : 97%  &nbspPhysics : 97%<br style="margin-top: 1rem!important;"><span style="font-weight: 300!important;color:#CED4DA">Tarini Chavan | IGCSE, March 19</span></p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="resultcontainer">
         <div class="resulttext">
             <h1><span style="color: #00AFB9;">Success</span> Stories.</h1>
@@ -271,7 +271,7 @@
                     </button>
                 </div>
             </div> -->
-            <div class="videocard1" style="display: flex; flex-direction: column;">
+            <div class="videocard1 hidden" style="display: flex; flex-direction: column;">
                 <div class="videocard1content">
                     <div class="videocard1img"><img src="public/img/review1.png"></div>
                     <p>"Dr. Nisha Varshney Ma'am is an amazing teacher who is thorough, detail oriented and explains biology concepts beautifully! I am grateful for her tutoring."<br><br><span style="font-weight: lighter;">Rashmi Chandra | Biology 12th</span></p><br>
@@ -280,12 +280,12 @@
                     <span>Play Video</span>
                 </button>
             </div>
-            <div class="videocard1" style="display: flex; flex-direction: column;">
+            <div class="videocard1 card2 hidden" style="display: flex; flex-direction: column;">
                 <div class="videocard1content">
                     <div class="videocard1img"><img src="public/img/review2.png"></div>
                     <p>“Mrs. Nisha Varshneya instrumental to my child’s success. Her way of teaching as well as emotional connect with the students is irreplacable.”<br><br><span style="font-weight: lighter;">Anuj Jaisinghani | Biology & Chemistry 9th-12th</span></p><br>
                 </div>
-                <button class="cssbuttons-io" onclick="playVideo('public/img/review1.mp4')" style="margin-top: auto; margin-right: auto;">
+                <button class="cssbuttons-io" onclick="playVideo('public/img/review2.mp4')" style="margin-top: auto; margin-right: auto;">
                     <span>Play Video</span>
                 </button>
             </div>
@@ -380,7 +380,7 @@
     <section class="contactcontainer">
         <div class="contacttext" style="display:flex;flex-direction: column; gap:2vh">
             <h1>Book a</h1>
-            <h1 style="color: #00AFB9;" class="demo">demo.</h1>
+            <h1 style="color: #00AFB9;" class="demo">free demo.</h1>
         </div>
         <div class="contactform">
             <p>Boost your grades, starting today.</p>

@@ -852,7 +852,7 @@ input:focus{
 }
 
 .card2{
-    transition-delay: 300ms;
+    transition-delay: 500ms;
 }
 
 .videocard1{
@@ -1074,4 +1074,51 @@ input:focus{
 .videocard1{
     width:330px;
 }
+}
+
+@media screen and (max-width:415px) {
+    .videocard1{
+        width: 315px !important;
+    }
+}
+
+@media screen and (max-width:366px) {
+    .videocard1{
+        width: 290px !important;
+    }
+}
+
+.videocardimgbig>img{
+    height: unset!important;
+    width: 100%!important;
+}
+.videocardimgbig{
+    height: 340px!important;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mobilecontainer{
+    display: none;
+}
+
+@media screen and (max-width:642px) {
+    
+.mobilecontainer{
+    display: flex!important;
+}
+
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:824px) {
+    .c-nav{
+        display: none!important;
+    }
+    .hamburger{
+        display: block!important;
+    }
 }
